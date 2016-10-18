@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Test scripty</title>
+        <script src="../dist/scripty.min.js" type="text/javascript" charset="utf-8" ></script>
+        <script-y packages="tinycolor,jquery,angularjs,angular translate,semantic-ui" locals="myscript.js" ></script-y>
+    </head>
+    <body>
+        <h1>Quick test for Scripty</h1>
+        <h3 id="h1"></h3>
+        <h3 id="h2"></h3>
+        <hr>
+        <div ng-app="myapp" ng-controller="mycontroller">
+            <h3>Lets test a bigger framework</h2>
+            <h3>{{value}}</h2>
+        </div>
+    </body>
+    <script  type="text/javascript" >
+            function changeDom(a, b) {
+                $('#h1').text('Hello from JQuery version:' + a);
+                $('#h2').text('Hello from tinycolor, my color is ' + b);
+            }
+
+            function amCallbackFunc() {
+                console.log('Am from the callback function');
+                var color = tinycolor("#F00");
+                changeDom($.fn.jquery, color.toString());
+            }
+
+            var color = tinycolor("#F00");
+            changeDom($.fn.jquery, color.toString());
+    </script>
+</html>

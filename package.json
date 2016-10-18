@@ -1,0 +1,37 @@
+{
+  "name": "scripty",
+  "version": "1.0.0",
+  "description": "An experimental tiny lib to load any JS library from jsdelivr.com dynamically based on the lib name. Specific version also supported.",
+  "main": "dist/scripty.js",
+  "readmeFilename": "README.md",
+  "author": {
+    "name": "Amgad Fahmi",
+    "email": "amgadnady@gmail.com"
+  },
+  "repository": {
+    "url": "https://github.com/amgadfahmi/scripty",
+    "type": "git"
+  },
+  "license": "MIT",
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "devDependencies": {
+    "babel-preset-babili": "0.0.5",
+    "browser-sync": "^2.17.3",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-strip-comments": "^2.4.3"
+  },
+  "keywords": [
+    "js",
+    "search",
+    "bower",
+    "fast",
+    "liberaries",
+    "javascript",
+    "dynamic",
+    "cdn"
+  ]
+}

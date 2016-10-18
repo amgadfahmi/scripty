@@ -1,0 +1,10 @@
+node_modules
+bower_components
+./dist
+test/temp
+tmp
+docs
+.DS_Store
+npm-debug.log
+*.info
+*.sublime-*
