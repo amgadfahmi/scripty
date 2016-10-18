@@ -3,7 +3,7 @@
 An experimental tiny lib **(3kb)** to load any JS library from jsdelivr.com dynamically based on the lib name. Specific version also supported.
 
 
-![Experimental](http://i3.cpcache.com/product/488780976/experimental_bumper_bumper_sticker.jpg?width=225&height=225&Filters=%5B%7B%22name%22%3A%22background%22%2C%22value%22%3A%22F2F2F2%22%2C%22sequence%22%3A2%7D%5D)
+![experimental](https://cloud.githubusercontent.com/assets/11326773/19479173/95c234a4-9556-11e6-95a8-d7a78cb0b66f.jpg)
 
 ## Idea
 
@@ -11,7 +11,7 @@ This library made using [ES6 Custom Elements](https://developers.google.com/web/
 
 ## Warning
 
-One more time, this is an expiremntal library and was made just for testing purposes, it uses the nasty **synchronous HTTP calls** (which is already [deprecated](https://xhr.spec.whatwg.org/#the-open()-method)) to simulate the same blocking behavior done by the `script tag`. More info about script tag and loading behavior is from [here](http://javascript.info/tutorial/onload-ondomcontentloaded) 
+One more time, this is an experimental library and was made just for testing purposes, it uses the nasty **synchronous HTTP calls** ([deprecated](https://xhr.spec.whatwg.org/#the-open()-method)) to simulate the same blocking behavior done by the `script tag`. More info about script tag and loading behavior is from [here](http://javascript.info/tutorial/onload-ondomcontentloaded) 
 
 
 ## Usage
@@ -23,7 +23,7 @@ Create scripty tag with the needed library name using packages property
 ```javascript
 <script-y packages="jquery"></script-y>
 ```
-If the library name got 2 words (ex: angular icons or angular translate) just place the name with space and it will be replaced automatically by * as search APIs uses minimatch. **It will take the first item as closest value when search performed**
+If the library name got 2 words (ex: angular icons or angular translate) just place the name with space and it will be replaced automatically by * as search APIs uses [minimatch](https://github.com/isaacs/minimatch). **It will take the first item as closest value when search performed**
 ```javascript
 <script-y packages="jquery*ui"></script-y>
 ```
