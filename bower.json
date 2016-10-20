@@ -1,8 +1,8 @@
 {
     "name": "scripty",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "An experimental tiny lib to load any JS library from jsdelivr.com dynamically based on the lib name. Specific version also supported.",
-    "main": "dist/scripty.js",
+    "main": "dist/scripty.min.js",
     "author": {
         "name": "Amgad Fahmi",
         "email": "amgadnady@gmail.com"
@@ -29,7 +29,7 @@
         "bower_components",
         "lib",
         "test",
-        "tasks",
+        "specs",
         "*.js",
         "*.json"
     ]
